@@ -1,3 +1,5 @@
+//Jonny and Garret
+
 #include <stdio.h>        // printf
 #include <assert.h>       // assert
 #include <limits.h>       // named constants for min, max of C integer data types
@@ -16,7 +18,7 @@ void utype_sizes();
 int main() {
     // TASK 1: sales example
     float total1;
-    total1 = sales_example(3.94, 4, 0.06);
+    
     printf("Total1 = $%.2f\n", total1);
     // TODO: Test on multiple calls, then add assert statements here
 
@@ -38,6 +40,11 @@ int main() {
     */
 float sales_example(float item_cost, unsigned short num_items, float tax) {
     // TODO: Complete this definition (removing the default return)
+    float total_aftertax;
+    float total1 = sales_example(3.94, 4, 0.06);
+    if(tax <= 0.00) {
+        printf("Tax is $%.2f\n", tax);
+    }
     return 0.0;
 }
 
